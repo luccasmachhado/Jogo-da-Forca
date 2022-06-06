@@ -58,8 +58,12 @@ public class Boneco {
     }
 
     public void showBoneco() {
+        System.out.println("|");
+        System.out.println("\\");
         System.out.println("( )");
-
+        if(bracoEsq == true && bracoDir == true && tronco == true){
+            System.out.println("/|\\");
+        }
         if (bracoEsq == true && bracoDir == false && tronco == true) {
             System.out.println("/|");
         } 
@@ -87,5 +91,7 @@ public class Boneco {
         if (pernaEsq && pernaDir) {
             System.out.println("/\\");
         }
+        System.out.println(nome);
+        
     }
 }
